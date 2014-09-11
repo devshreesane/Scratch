@@ -15,6 +15,13 @@ namespace Code
         {
             Regex food = new Regex(@".*(trader|fred|safeway|mayuri).*", RegexOptions.Compiled);
             labelRegexes.Add("Grocery", food);
+            Regex amazon = new Regex(@".*(amazon).*", RegexOptions.Compiled);
+            labelRegexes.Add("Amazon", amazon);
+            Regex cafe = new Regex(@".*(cafe cc).*", RegexOptions.Compiled);
+            labelRegexes.Add("Cafe", cafe);
+            Regex zipcar = new Regex(@".*(zipcar).*", RegexOptions.Compiled);
+            labelRegexes.Add("Zipcar", zipcar);
+
         }
 
         public string[] Categorize(string description)
